@@ -137,4 +137,261 @@ public class BoardDAO {
 			disConnection();
 		}
 	}
+	
+	//내용보기(조회수증가) type=0 => 수정하기(데이터읽기) type=1
+	public BoardVO boardDetailData(int no, int type)
+	{
+		BoardVO vo=new BoardVO();
+		try
+		{
+			getConnection();
+			String sql="";
+			//조회수증가
+			if(type==0)
+			{
+				sql= "UPDATE replyBoard SET "
+				   + "hit=hit+1 "
+				   + "WHERE no=?";
+				ps=conn.prepareStatement(sql);
+				ps.setInt(1, no);
+				ps.executeUpdate();
+			}
+			//상세보기, 수정하기
+			sql="SELECT no,name,subject,content,regdate,hit "
+			   + "FROM replyBoard "
+			   + "WHERE no=?";
+			ps=conn.prepareStatement(sql);
+			ps.setInt(1, no);
+			//데이터읽기
+			ResultSet rs=ps.executeQuery();
+			rs.next();
+			//VO에 값을 저장
+			vo.setNo(rs.getInt(1));
+			vo.setName(rs.getString(2));
+			vo.setSubject(rs.getString(3));
+			vo.setContent(rs.getString(4));
+			vo.setRegdate(rs.getDate(5));
+			vo.setHit(rs.getInt(6));
+			
+			rs.close();
+		}
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}
+		finally
+		{
+			disConnection();
+		}
+		return vo;
+	}
+	//수정
+	public boolean boardUpdate(BoardVO vo)
+	{
+		boolean bCheck=false;
+		try
+		{
+			getConnection();
+			String sql= "SELECT pwd FROM replyBoard "
+					  + "WHERE no=?";
+			ps=conn.prepareStatement(sql);
+			ps.setInt(1, vo.getNo());
+			ResultSet rs=ps.executeQuery();
+			rs.next();
+			String db_pwd=rs.getString(1);
+			rs.close();
+			
+			if(db_pwd.equals(vo.getPwd()))
+			{
+				bCheck=true;
+				sql= "UPDATE replyBoard SET "
+				   + "name=?, subject=?, content=? "
+				   + "WHERE no=?";
+				ps=conn.prepareStatement(sql);
+				ps.setString(1, vo.getName());
+				ps.setString(2, vo.getSubject());
+				ps.setString(3, vo.getContent());
+				ps.setInt(4, vo.getNo());
+				
+				ps.executeUpdate();
+			}
+			else
+			{
+				bCheck=false;
+			}
+		}
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}
+		finally
+		{
+			disConnection();
+		}
+		
+		return bCheck;
+	}
+	//삭제
+	//답변
+	public void replyInsert(int pno, BoardVO vo)
+	{
+		try
+		{
+			getConnection();
+			
+			conn.setAutoCommit(false);
+			
+			//gi, gs, gt
+			String sql= "SELECT group_id, group_step, group_tab "
+					  + "FROM replyBoard "
+					  + "WHERE no=?";
+			ps=conn.prepareStatement(sql);
+			ps.setInt(1, pno);
+			ResultSet rs=ps.executeQuery();
+			rs.next();
+			int gi=rs.getInt(1);
+			int gs=rs.getInt(2);
+			int gt=rs.getInt(3);
+			rs.close();
+			
+			//답변형게시판의 핵심쿼리
+			/*
+			 				gi 		gs 		gt		depth
+			 	AAAA		1		0		0		2
+			 	 BBBB		1		1		1		1
+			 	  CCCC		1		2		2		1
+			 	   DDDD		1		3		3		0
+			 	 EEEE		1		1		1		0
+			 	 
+			 	=> 			gi 		gs 		gt		depth
+			 	AAAA		1		0		0		2
+			 	 EEEE		1		1		1 		0	
+			 	 BBBB		1		2		1		1
+			 	  CCCC		1		3		2		1
+			 	   DDDD		1		4		3		0
+			 */
+			sql= "UPDATE replyBoard SET "
+			   + "group_step=group_step+1 "
+			   + "WHERE group_id=? AND group_step>?";
+			
+			ps=conn.prepareStatement(sql);
+			ps.setInt(1, gi);
+			ps.setInt(2, gs);
+			ps.executeUpdate();
+			
+			//데이터추가
+			sql= "INSERT INTO replyBoard(no,name,subject,content,pwd,group_id,group_step,group_tab,root) VALUES( "
+			   + "rb_no_seq.nextval,?,?,?,?,?,?,?,?)";
+			ps=conn.prepareStatement(sql);
+			ps.setString(1, vo.getName());
+			ps.setString(2, vo.getSubject());
+			ps.setString(3, vo.getContent());
+			ps.setString(4, vo.getPwd());
+			ps.setInt(5, gi);
+			ps.setInt(6, gs+1);
+			ps.setInt(7, gt+1);
+			ps.setInt(8, pno);
+			ps.executeUpdate();
+			
+			//depth증가
+			sql= "UPDATE replyBoard SET "
+			   + "depth=depth+1 "
+			   + "WHERE no=?";
+			ps=conn.prepareStatement(sql);
+			ps.setInt(1, pno);
+			ps.executeUpdate();
+			
+			conn.commit();
+		}
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+			try
+			{
+				conn.rollback();
+			}catch(Exception e){}
+		}
+		finally
+		{
+			try
+			{
+				conn.setAutoCommit(true);
+			}catch(Exception ex){}
+			disConnection();
+		}
+	}
+	
+	  public int boardDelete(int no,String pwd)
+	  {
+		  int result=0;
+		  try
+		  {
+			  getConnection();
+			  // 비밀번호 검색 
+			  String sql="SELECT pwd FROM replyBoard "
+					    +"WHERE no=?";
+			  ps=conn.prepareStatement(sql);
+			  ps.setInt(1, no);
+			  ResultSet rs=ps.executeQuery();
+			  rs.next();
+			  String db_pwd=rs.getString(1);
+			  rs.close();
+			  
+			  if(db_pwd.equals(pwd))
+			  {
+				  result=1;
+				  sql="SELECT root,depth FROM replyBoard "
+				     +"WHERE no=?";
+				  ps=conn.prepareStatement(sql);
+				  ps.setInt(1, no);
+				  rs=ps.executeQuery();
+				  rs.next();
+				  
+				  int root=rs.getInt(1);
+				  int depth=rs.getInt(2);
+				  rs.close();
+				  
+				  if(depth==0)
+				  {
+					  sql="DELETE FROM replyBoard "
+					     +"WHERE no=?";
+					  ps=conn.prepareStatement(sql);
+					  ps.setInt(1, no);
+					  ps.executeUpdate();
+				  }
+				  else
+				  {
+					  String msg="관리자가 삭제한 게시물입니다";
+					  sql="UPDATE replyBoard SET "
+						 +"subject=?,content=? "
+						 +"WHERE no=?";
+					  ps=conn.prepareStatement(sql);
+					  ps.setString(1, msg);
+					  ps.setString(2, msg);
+					  ps.setInt(3, no);
+					  ps.executeUpdate();
+					  
+					  sql="UPDATE replyBoard SET "
+					     +"depth=depth-1 "
+						 +"WHERE no=?";
+					  ps=conn.prepareStatement(sql);
+					  ps.setInt(1, root);
+					  ps.executeUpdate();
+				  }
+			  }
+			  else
+			  {
+				  result=0;
+			  }
+			  
+		  }catch(Exception ex)
+		  {
+			  ex.printStackTrace();
+		  }
+		  finally
+		  {
+			  disConnection();
+		  }
+		  return result;
+	  }
 }
