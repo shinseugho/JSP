@@ -130,8 +130,8 @@ public class FileBoardDAO {
 			ps.executeUpdate();
 			
 			sql="SELECT no,name,subject,content,regdate,hit,filename,filesize "
-					+ "FROM fileBoard "
-					+ "WHERE no=?";
+			   + "FROM fileBoard "
+			   + "WHERE no=?";
 			ps=conn.prepareStatement(sql);
 			ps.setInt(1, no);
 			
