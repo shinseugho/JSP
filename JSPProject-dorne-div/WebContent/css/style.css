@@ -543,6 +543,7 @@ li {
 .hero-search-form {
     margin-top: 90px;
     position: relative;
+    width: 1140px;
     z-index: 1;
 }
 
@@ -960,11 +961,14 @@ li {
     border-top: 1px solid #bec0cc;
 }
 
+.footer-text {
+	margin: 0px auto;
+}
+
 .footer-text p {
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 0;
-    padding-left: 760px;
 }
 
 .footer-social-btns > a {

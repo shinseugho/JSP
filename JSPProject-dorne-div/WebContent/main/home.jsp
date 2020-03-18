@@ -105,26 +105,56 @@
                                 <h6>얼마에 떠날까요?</h6>
                                 <form action="#" method="get">
                                     <select class="custom-select">
-                                        <option selected>Your Destinations</option>
-                                        <option value="1">New York</option>
-                                        <option value="2">Latvia</option>
-                                        <option value="3">Dhaka</option>
-                                        <option value="4">Melbourne</option>
-                                        <option value="5">London</option>
+                                        <option selected>출발지</option>
+                                        <option value="1">서울/김포</option>
+                                        <option value="2">부산/김해</option>
+                                        <option value="3">제주</option>
+                                        <option value="4">대구</option>
+                                        <option value="5">울산</option>
+                                        <option value="6">청주</option>
+                                        <option value="7">무안</option>
+                                        <option value="8">광주</option>
+                                        <option value="9">여수</option>
+                                        <option value="10">포항</option>
+                                        <option value="11">사천</option>
+                                        <option value="12">군산</option>
+                                        <option value="13">횡성/원주</option>
                                     </select>
                                     <select class="custom-select">
-                                        <option selected>All Catagories</option>
-                                        <option value="1">Catagories 1</option>
-                                        <option value="2">Catagories 2</option>
-                                        <option value="3">Catagories 3</option>
+                                        <option selected>목적지</option>
+                                        <option value="1">제주국제공항</option>
                                     </select>
                                     <select class="custom-select">
-                                        <option selected>Price Range</option>
-                                        <option value="1">$100 - $499</option>
-                                        <option value="2">$500 - $999</option>
-                                        <option value="3">$1000 - $4999</option>
+                                        <option selected>종류</option>
+                                        <option value="1">편도</option>
+                                        <option value="2">왕복</option>
+                                        <option value="3">다구간</option>
                                     </select>
-                                    <button type="submit" class="btn dorne-btn"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
+                                    <select class="custom-select">
+                                        <option selected>가는날</option>
+                                    </select>
+                                    <select class="custom-select">
+                                        <option selected>오는날</option>
+                                    </select>
+                                    <select class="custom-select">
+                                        <option selected>성인</option>
+                                        <option value="1">제주국제공항</option>
+                                    </select>
+                                    <select class="custom-select">
+                                        <option selected>소아</option>
+                                        <option value="1">제주국제공항</option>
+                                    </select>
+                                    <select class="custom-select">
+                                        <option selected>유아</option>
+                                        <option value="1">제주국제공항</option>
+                                    </select>
+                                    <select class="custom-select">
+                                        <option selected>좌석등급</option>
+                                        <option value="1">일반석</option>
+                                        <option value="2">프레스티지석</option>
+                                        <option value="3">일등석</option>
+                                    </select>
+                                    <button type="submit" class="btn dorne-btn"><i class="fa fa-search pr-2" aria-hidden="true"></i>항공편조회</button>
                                 </form>
                             </div>
                             <div class="tab-pane fade" id="nav-events" role="tabpanel" aria-labelledby="nav-events-tab">
