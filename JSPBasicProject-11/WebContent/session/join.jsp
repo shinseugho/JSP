@@ -8,6 +8,13 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/shadowbox.css">
+<script type="text/javascript" src="js/shdowbox.js"></script>
+<script type="text/javascript">
+Shadowbox.init({
+	players:['iframe']
+});
+</script>
 <style type="text/css">
 .row{
 	margin: 0px auto;
@@ -79,7 +86,7 @@
 					<td width="85%" >
 						<input type="text" name="post1" size="5" class="input-sm" readonly> -
 						<input type="text" name="post2" size="5" class="input-sm" readonly>
-						<input type="button" class="btn btn-sm btn-primary" value="Search"> 
+						<input type="button" class="btn btn-sm btn-primary" value="Search" onclick="postfind()"> 
 					</td>
 				</tr>
 				<tr>
