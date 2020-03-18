@@ -9,13 +9,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/shadowbox.css">
-<script type="text/javascript" src="js/shdowbox.js"></script>
+<script type="text/javascript" src="js/shadowbox.js"></script>
 <script type="text/javascript">
-Shadowbox.init({
-	players:['iframe']
-});
-function postfind() {
-	window.open("postfind.jsp","postfind","width=450,height=480,scrollbars=yes")
+
+function postfind() 
+{
+	window.open("postfind.jsp","postfind","width=450, height=480, scrollbars=yes")
+}
+function idcheck() {
+	window.open("idcheck.jsp","idcheck","width=380, height=230, scrollbars=no")
 }
 </script>
 <style type="text/css">
@@ -44,12 +46,13 @@ function postfind() {
 	<div class="container">
 		<h1 class="text-center">Sign up</h1>
 		<div class="row">
+			<form name="frm">
 			<table class="table table-hover">
 				<tr>
 					<th width="15%" class="danger text-right">Username</th>
 					<td width="85%" >
 						<input type="text" name="id" size="15" class="input-sm" readonly>
-						<input type="button" value="check" class="btn btn-sm btn-danger">
+						<input type="button" value="check" class="btn btn-sm btn-danger" onclick="idcheck()">
 					</td>
 				</tr>
 				<tr>
@@ -131,6 +134,7 @@ function postfind() {
 					</td>
 				</tr>
 			</table>
+			</form>
 		</div>
 	</div>		
 </body>
