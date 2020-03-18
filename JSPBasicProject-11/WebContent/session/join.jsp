@@ -14,6 +14,9 @@
 Shadowbox.init({
 	players:['iframe']
 });
+function postfind() {
+	window.open("postfind.jsp","postfind","width=450,height=480,scrollbars=yes")
+}
 </script>
 <style type="text/css">
 .row{
