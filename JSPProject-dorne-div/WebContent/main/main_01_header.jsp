@@ -31,49 +31,61 @@
             <div class="row h-100">
                 <div class="col-12 h-100">
                     <nav class="h-100 navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                        <a class="navbar-brand" href="#"><img src="img/core-img/logo.png" alt=""></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dorneNav" aria-controls="dorneNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
                         <!-- Nav -->
                         <div class="collapse navbar-collapse" id="dorneNav">
                             <ul class="navbar-nav mr-auto" id="dorneMenu">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="index.jsp">Home <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">여행정보<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="index.html">Home</a>
-                                        <a class="dropdown-item" href="explore.html">Explore</a>
-                                        <a class="dropdown-item" href="listing.html">Listing</a>
-                                        <a class="dropdown-item" href="single-listing.html">Single Listing</a>
-                                        <a class="dropdown-item" href="contact.html">Contact</a>
+                                        <a class="dropdown-item" href="index.jsp?mode=1">여행준비</a>
+                                        <a class="dropdown-item" href="index.jsp?mode=2">가이드북</a>
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Listings <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">여행상품정보<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="index.jsp?mode=3">항공</a>
+                                        <a class="dropdown-item" href="index.jsp?mode=4">숙소</a>
+                                        <a class="dropdown-item" href="index.jsp?mode=5">여행지</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">여행플랜<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                        <a class="dropdown-item" href="index.html">Home</a>
-                                        <a class="dropdown-item" href="explore.html">Explore</a>
-                                        <a class="dropdown-item" href="listing.html">Listing</a>
-                                        <a class="dropdown-item" href="single-listing.html">Single Listing</a>
-                                        <a class="dropdown-item" href="contact.html">Contact</a>
+                                        <a class="dropdown-item" href="index.jsp?mode=6">항공</a>
+                                        <a class="dropdown-item" href="index.jsp?mode=7">숙소</a>
+                                        <a class="dropdown-item" href="index.jsp?mode=8">여행지</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">커뮤니티<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                        <a class="dropdown-item" href="index.jsp?mode=9">공지사항</a>
+                                        <a class="dropdown-item" href="index.jsp?mode=10">자유게시판</a>
+                                        <a class="dropdown-item" href="index.jsp?mode=11">후기&팁</a>
+                                        <a class="dropdown-item" href="index.jsp?mode=12">Q&A</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
+                                    <a class="nav-link" href="index.jsp?mode=13">고객센터</a>
                                 </li>
                             </ul>
                             <!-- Search btn -->
                             <div class="dorne-search-btn">
-                                <a id="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i> Search</a>
+                                <a id="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i>검색</a>
+                            </div>
+                            <!-- Register btn -->
+                            <div class="dorne-signin-btn">
+                                <a href="#">회원가입</a>
                             </div>
                             <!-- Signin btn -->
                             <div class="dorne-signin-btn">
-                                <a href="#">Sign in  or Register</a>
-                            </div>
-                            <!-- Add listings btn -->
-                            <div class="dorne-add-listings-btn">
-                                <a href="#" class="btn dorne-btn">+ Add Listings</a>
+                                <a href="#">로그인</a>
                             </div>
                         </div>
                     </nav>
@@ -81,205 +93,7 @@
             </div>
         </div>
     </header>
-    <!-- ***** Header Area End ***** -->
+<!-- ***** Header Area End ***** -->
 
-    <!-- ***** Welcome Area Start ***** -->
-    <section class="dorne-welcome-area bg-img bg-overlay" style="background-image: url(../css/img/bg-img/jeju.png);">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center justify-content-center">
-                <div class="col-12 col-md-10">
-                    <div class="hero-content">
-                        <h2>삼다도</h2>
-                        <h4>여행복행에서 당신의 일정을 만들어보세요</h4>
-                    </div>
-                    <!-- Hero Search Form -->
-                    <div class="hero-search-form">
-                        <!-- Tabs -->
-                        <div class="nav nav-tabs" id="heroTab" role="tablist">
-                            <a class="nav-item nav-link active" id="nav-places-tab" data-toggle="tab" href="#nav-places" role="tab" aria-controls="nav-places" aria-selected="true">항공</a>
-                            <a class="nav-item nav-link" id="nav-events-tab" data-toggle="tab" href="#nav-events" role="tab" aria-controls="nav-events" aria-selected="false">숙박</a>
-                        </div>
-                        <!-- Tabs Content -->
-                        <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="nav-places" role="tabpanel" aria-labelledby="nav-places-tab">
-                                <h6>얼마에 떠날까요?</h6>
-                                <form action="#" method="get">
-                                    <select class="custom-select">
-                                        <option selected>출발지</option>
-                                        <option value="1">서울/김포</option>
-                                        <option value="2">부산/김해</option>
-                                        <option value="3">제주</option>
-                                        <option value="4">대구</option>
-                                        <option value="5">울산</option>
-                                        <option value="6">청주</option>
-                                        <option value="7">무안</option>
-                                        <option value="8">광주</option>
-                                        <option value="9">여수</option>
-                                        <option value="10">포항</option>
-                                        <option value="11">사천</option>
-                                        <option value="12">군산</option>
-                                        <option value="13">횡성/원주</option>
-                                    </select>
-                                    <select class="custom-select">
-                                        <option selected>목적지</option>
-                                        <option value="1">제주국제공항</option>
-                                    </select>
-                                    <select class="custom-select">
-                                        <option selected>종류</option>
-                                        <option value="1">편도</option>
-                                        <option value="2">왕복</option>
-                                        <option value="3">다구간</option>
-                                    </select>
-                                    <select class="custom-select">
-                                        <option selected>가는날</option>
-                                    </select>
-                                    <select class="custom-select">
-                                        <option selected>오는날</option>
-                                    </select>
-                                    <select class="custom-select">
-                                        <option selected>성인</option>
-                                        <option value="1">제주국제공항</option>
-                                    </select>
-                                    <select class="custom-select">
-                                        <option selected>소아</option>
-                                        <option value="1">제주국제공항</option>
-                                    </select>
-                                    <select class="custom-select">
-                                        <option selected>유아</option>
-                                        <option value="1">제주국제공항</option>
-                                    </select>
-                                    <select class="custom-select">
-                                        <option selected>좌석등급</option>
-                                        <option value="1">일반석</option>
-                                        <option value="2">프레스티지석</option>
-                                        <option value="3">일등석</option>
-                                    </select>
-                                    <button type="submit" class="btn dorne-btn"><i class="fa fa-search pr-2" aria-hidden="true"></i>항공편조회</button>
-                                </form>
-                            </div>
-                            <div class="tab-pane fade" id="nav-events" role="tabpanel" aria-labelledby="nav-events-tab">
-                                <h6>어디서 머무를까요?</h6>
-                                <form action="#" method="get">
-                                    <select class="custom-select">
-                                        <option selected>Your Destinations</option>
-                                        <option value="1">New York</option>
-                                        <option value="2">Latvia</option>
-                                        <option value="3">Dhaka</option>
-                                        <option value="4">Melbourne</option>
-                                        <option value="5">London</option>
-                                    </select>
-                                    <select class="custom-select">
-                                        <option selected>All Catagories</option>
-                                        <option value="1">Catagories 1</option>
-                                        <option value="2">Catagories 2</option>
-                                        <option value="3">Catagories 3</option>
-                                    </select>
-                                    <select class="custom-select">
-                                        <option selected>Price Range</option>
-                                        <option value="1">$100 - $499</option>
-                                        <option value="2">$500 - $999</option>
-                                        <option value="3">$1000 - $4999</option>
-                                    </select>
-                                    <button type="submit" class="btn dorne-btn"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Welcome Area End ***** -->
-
-    <!-- ***** Catagory Area Start ***** -->
-    <section class="dorne-catagory-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="all-catagories">
-                        <div class="row">
-                            <!-- Single Catagory Area -->
-                            <div class="col-12 col-sm-6 col-md">
-                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.2s">
-                                    <div class="catagory-content">
-                                        <img src="../css/img/core-img/data.png" alt="">
-                                        <a href="#">
-                                            <h6>여행자료</h6>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Catagory Area -->
-                            <div class="col-12 col-sm-6 col-md">
-                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.4s">
-                                    <div class="catagory-content">
-                                        <img src="../css/img/core-img/product.png" alt="">
-                                        <a href="#">
-                                            <h6>상품정보</h6>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Catagory Area -->
-                            <div class="col-12 col-sm-6 col-md">
-                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.6s">
-                                    <div class="catagory-content">
-                                        <img src="../css/img/core-img/plan.png" alt="">
-                                        <a href="#">
-                                            <h6>여행플랜</h6>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Catagory Area -->
-                            <div class="col-12 col-sm-6 col-md">
-                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.8s">
-                                    <div class="catagory-content">
-                                        <img src="../css/img/core-img/community.png" alt="">
-                                        <a href="#">
-                                            <h6>커뮤니티</h6>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Catagory Area -->
-                            <div class="col-12 col-md">
-                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="1s">
-                                    <div class="catagory-content">
-                                        <img src="../css/img/core-img/customer.png" alt="">
-                                        <a href="#">
-                                            <h6>고객센터</h6>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Catagory Area End ***** -->
-
-
-
-
-<!-- ****** Footer Area Start ****** -->
-    <footer class="dorne-footer-area">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 d-md-flex align-items-center justify-content-between">
-                    <div class="footer-text">
-                        <p>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- ****** Footer Area End ****** -->
 </body>
 </html>

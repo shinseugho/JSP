@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<!-- ***** Welcome Area Start ***** -->
-    <section class="dorne-welcome-area bg-img bg-overlay" style="background-image: url(img/bg-img/hero-1.jpg);">
+    <!-- ***** Welcome Area Start ***** -->
+    <section class="dorne-welcome-area bg-img bg-overlay" style="background-image: url(../css/img/bg-img/jeju.png);">
         <div class="container h-100">
             <div class="row h-100 align-items-center justify-content-center">
                 <div class="col-12 col-md-10">
@@ -82,94 +82,10 @@
                 </div>
             </div>
         </div>
-        <!-- Hero Social Btn -->
-        <div class="hero-social-btn">
-            <div class="social-title d-flex align-items-center">
-                <h6>Follow us on Social Media</h6>
-                <span></span>
-            </div>
-            <div class="social-btns">
-                <a href="#"><i class="fa fa-linkedin" aria-haspopup="true"></i></a>
-                <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-haspopup="true"></i></a>
-                <a href="#"><i class="fa fa-facebook" aria-haspopup="true"></i></a>
-            </div>
-        </div>
     </section>
     <!-- ***** Welcome Area End ***** -->
-
-    <!-- ***** Catagory Area Start ***** -->
-    <section class="dorne-catagory-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="all-catagories">
-                        <div class="row">
-                            <!-- Single Catagory Area -->
-                            <div class="col-12 col-sm-6 col-md">
-                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.2s">
-                                    <div class="catagory-content">
-                                        <img src="img/core-img/icon-1.png" alt="">
-                                        <a href="#">
-                                            <h6>Hotels</h6>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Catagory Area -->
-                            <div class="col-12 col-sm-6 col-md">
-                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.4s">
-                                    <div class="catagory-content">
-                                        <img src="img/core-img/icon-2.png" alt="">
-                                        <a href="#">
-                                            <h6>Restaurants</h6>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Catagory Area -->
-                            <div class="col-12 col-sm-6 col-md">
-                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.6s">
-                                    <div class="catagory-content">
-                                        <img src="img/core-img/icon-3.png" alt="">
-                                        <a href="#">
-                                            <h6>Shopping</h6>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Catagory Area -->
-                            <div class="col-12 col-sm-6 col-md">
-                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.8s">
-                                    <div class="catagory-content">
-                                        <img src="img/core-img/icon-4.png" alt="">
-                                        <a href="#">
-                                            <h6>Beauty &amp; Spa</h6>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Catagory Area -->
-                            <div class="col-12 col-md">
-                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="1s">
-                                    <div class="catagory-content">
-                                        <img src="img/core-img/icon-5.png" alt="">
-                                        <a href="#">
-                                            <h6>Cinema</h6>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Catagory Area End ***** -->
-
-    <!-- ***** About Area Start ***** -->
+    
+       <!-- ***** About Area Start ***** -->
     <section class="dorne-about-area section-padding-0-100">
         <div class="container">
             <div class="row">
@@ -185,7 +101,7 @@
     <!-- ***** About Area End ***** -->
 
     <!-- ***** Editor Pick Area Start ***** -->
-    <section class="dorne-editors-pick-area bg-img bg-overlay-9 section-padding-100" style="background-image: url(img/bg-img/hero-2.jpg);">
+    <section class="dorne-editors-pick-area bg-img bg-overlay-9 section-padding-100" style="background-image: url(../css/img/bg-img/hero-2.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -200,7 +116,7 @@
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="single-editors-pick-area wow fadeInUp" data-wow-delay="0.2s">
-                        <img src="img/bg-img/editor-1.jpg" alt="">
+                        <img src="../css/img/bg-img/editor-1.jpg" alt="">
                         <div class="editors-pick-info">
                             <div class="places-total-destinations d-flex">
                                 <a href="#">New York</a>
@@ -214,7 +130,7 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="single-editors-pick-area wow fadeInUp" data-wow-delay="0.4s">
-                        <img src="img/bg-img/editor-2.jpg" alt="">
+                        <img src="../css/img/bg-img/editor-2.jpg" alt="">
                         <div class="editors-pick-info">
                             <div class="places-total-destinations d-flex">
                                 <a href="#">Barcelona</a>
@@ -226,7 +142,7 @@
                         </div>
                     </div>
                     <div class="single-editors-pick-area wow fadeInUp" data-wow-delay="0.6s">
-                        <img src="img/bg-img/editor-3.jpg" alt="">
+                        <img src="../css/img/bg-img/editor-3.jpg" alt="">
                         <div class="editors-pick-info">
                             <div class="places-total-destinations d-flex">
                                 <a href="#">paris</a>
@@ -261,7 +177,7 @@
                     <div class="features-slides owl-carousel">
                         <!-- Single Features Area -->
                         <div class="single-features-area">
-                            <img src="img/bg-img/feature-1.jpg" alt="">
+                            <img src="../css/img/bg-img/feature-1.jpg" alt="">
                             <!-- Price -->
                             <div class="price-start">
                                 <p>FROM $59/night</p>
@@ -278,7 +194,7 @@
                         </div>
                         <!-- Single Features Area -->
                         <div class="single-features-area">
-                            <img src="img/bg-img/feature-2.jpg" alt="">
+                            <img src="../css/img/bg-img/feature-2.jpg" alt="">
                             <!-- Price -->
                             <div class="price-start">
                                 <p>FROM $59/night</p>
@@ -295,7 +211,7 @@
                         </div>
                         <!-- Single Features Area -->
                         <div class="single-features-area">
-                            <img src="img/bg-img/feature-3.jpg" alt="">
+                            <img src="../css/img/bg-img/feature-3.jpg" alt="">
                             <!-- Price -->
                             <div class="price-start">
                                 <p>FROM $59/night</p>
@@ -312,7 +228,7 @@
                         </div>
                         <!-- Single Features Area -->
                         <div class="single-features-area">
-                            <img src="img/bg-img/feature-4.jpg" alt="">
+                            <img src="../css/img/bg-img/feature-4.jpg" alt="">
                             <!-- Price -->
                             <div class="price-start">
                                 <p>FROM $59/night</p>
@@ -329,7 +245,7 @@
                         </div>
                         <!-- Single Features Area -->
                         <div class="single-features-area">
-                            <img src="img/bg-img/feature-5.jpg" alt="">
+                            <img src="../css/img/bg-img/feature-5.jpg" alt="">
                             <!-- Price -->
                             <div class="price-start">
                                 <p>FROM $59/night</p>
@@ -369,11 +285,11 @@
                     <div class="features-slides owl-carousel">
                         <!-- Single Features Area -->
                         <div class="single-features-area">
-                            <img src="img/bg-img/feature-6.jpg" alt="">
+                            <img src="../css/img/bg-img/feature-6.jpg" alt="">
                             <!-- Rating & Map Area -->
                             <div class="ratings-map-area d-flex">
                                 <a href="#">8.5</a>
-                                <a href="#"><img src="img/core-img/map.png" alt=""></a>
+                                <a href="#"><img src="../css/img/core-img/map.png" alt=""></a>
                             </div>
                             <div class="feature-content d-flex align-items-center justify-content-between">
                                 <div class="feature-title">
@@ -387,11 +303,11 @@
                         </div>
                         <!-- Single Features Area -->
                         <div class="single-features-area">
-                            <img src="img/bg-img/feature-7.jpg" alt="">
+                            <img src="../css/img/bg-img/feature-7.jpg" alt="">
                             <!-- Rating & Map Area -->
                             <div class="ratings-map-area d-flex">
                                 <a href="#">9.5</a>
-                                <a href="#"><img src="img/core-img/map.png" alt=""></a>
+                                <a href="#"><img src="../css/img/core-img/map.png" alt=""></a>
                             </div>
                             <div class="feature-content d-flex align-items-center justify-content-between">
                                 <div class="feature-title">
@@ -405,11 +321,11 @@
                         </div>
                         <!-- Single Features Area -->
                         <div class="single-features-area">
-                            <img src="img/bg-img/feature-8.jpg" alt="">
+                            <img src="../css/img/bg-img/feature-8.jpg" alt="">
                             <!-- Rating & Map Area -->
                             <div class="ratings-map-area d-flex">
                                 <a href="#">8.2</a>
-                                <a href="#"><img src="img/core-img/map.png" alt=""></a>
+                                <a href="#"><img src="../css/img/core-img/map.png" alt=""></a>
                             </div>
                             <div class="feature-content d-flex align-items-center justify-content-between">
                                 <div class="feature-title">
@@ -423,11 +339,11 @@
                         </div>
                         <!-- Single Features Area -->
                         <div class="single-features-area">
-                            <img src="img/bg-img/feature-9.jpg" alt="">
+                            <img src="../css/img/bg-img/feature-9.jpg" alt="">
                             <!-- Rating & Map Area -->
                             <div class="ratings-map-area d-flex">
                                 <a href="#">8.7</a>
-                                <a href="#"><img src="img/core-img/map.png" alt=""></a>
+                                <a href="#"><img src="../css/img/core-img/map.png" alt=""></a>
                             </div>
                             <div class="feature-content d-flex align-items-center justify-content-between">
                                 <div class="feature-title">
@@ -441,11 +357,11 @@
                         </div>
                         <!-- Single Features Area -->
                         <div class="single-features-area">
-                            <img src="img/bg-img/feature-10.jpg" alt="">
+                            <img src="../css/img/bg-img/feature-10.jpg" alt="">
                             <!-- Rating & Map Area -->
                             <div class="ratings-map-area d-flex">
                                 <a href="#">9.8</a>
-                                <a href="#"><img src="img/core-img/map.png" alt=""></a>
+                                <a href="#"><img src="../css/img/core-img/map.png" alt=""></a>
                             </div>
                             <div class="feature-content d-flex align-items-center justify-content-between">
                                 <div class="feature-title">
@@ -465,7 +381,7 @@
     <!-- ***** Features Restaurant Area End ***** -->
 
     <!-- ***** Features Events Area Start ***** -->
-    <section class="dorne-features-events-area bg-img bg-overlay-9 section-padding-100-50" style="background-image: url(img/bg-img/hero-3.jpg)">
+    <section class="dorne-features-events-area bg-img bg-overlay-9 section-padding-100-50" style="background-image: url(../css/img/bg-img/hero-3.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -481,10 +397,10 @@
                 <div class="col-12 col-lg-6">
                     <div class="single-feature-events-area d-sm-flex align-items-center wow fadeInUpBig" data-wow-delay="0.2s">
                         <div class="feature-events-thumb">
-                            <img src="img/bg-img/event-1.jpg" alt="">
+                            <img src="../css/img/bg-img/event-1.jpg" alt="">
                             <div class="date-map-area d-flex">
                                 <a href="#">26 Nov</a>
-                                <a href="#"><img src="img/core-img/map.png" alt=""></a>
+                                <a href="#"><img src="../css/img/core-img/map.png" alt=""></a>
                             </div>
                         </div>
                         <div class="feature-events-content">
@@ -500,10 +416,10 @@
                 <div class="col-12 col-lg-6">
                     <div class="single-feature-events-area d-sm-flex align-items-center wow fadeInUpBig" data-wow-delay="0.3s">
                         <div class="feature-events-thumb">
-                            <img src="img/bg-img/event-2.jpg" alt="">
+                            <img src="../css/img/bg-img/event-2.jpg" alt="">
                             <div class="date-map-area d-flex">
                                 <a href="#">26 Nov</a>
-                                <a href="#"><img src="img/core-img/map.png" alt=""></a>
+                                <a href="#"><img src="../css/img/core-img/map.png" alt=""></a>
                             </div>
                         </div>
                         <div class="feature-events-content">
@@ -519,10 +435,10 @@
                 <div class="col-12 col-lg-6">
                     <div class="single-feature-events-area d-sm-flex align-items-center wow fadeInUpBig" data-wow-delay="0.4s">
                         <div class="feature-events-thumb">
-                            <img src="img/bg-img/event-3.jpg" alt="">
+                            <img src="../css/img/bg-img/event-3.jpg" alt="">
                             <div class="date-map-area d-flex">
                                 <a href="#">26 Nov</a>
-                                <a href="#"><img src="img/core-img/map.png" alt=""></a>
+                                <a href="#"><img src="../css/img/core-img/map.png" alt=""></a>
                             </div>
                         </div>
                         <div class="feature-events-content">
@@ -538,10 +454,10 @@
                 <div class="col-12 col-lg-6">
                     <div class="single-feature-events-area d-sm-flex align-items-center wow fadeInUpBig" data-wow-delay="0.5s">
                         <div class="feature-events-thumb">
-                            <img src="img/bg-img/event-4.jpg" alt="">
+                            <img src="../css/img/bg-img/event-4.jpg" alt="">
                             <div class="date-map-area d-flex">
                                 <a href="#">26 Nov</a>
-                                <a href="#"><img src="img/core-img/map.png" alt=""></a>
+                                <a href="#"><img src="../css/img/core-img/map.png" alt=""></a>
                             </div>
                         </div>
                         <div class="feature-events-content">
@@ -557,10 +473,10 @@
                 <div class="col-12 col-lg-6">
                     <div class="single-feature-events-area d-sm-flex align-items-center wow fadeInUpBig" data-wow-delay="0.6s">
                         <div class="feature-events-thumb">
-                            <img src="img/bg-img/event-5.jpg" alt="">
+                            <img src="../css/img/bg-img/event-5.jpg" alt="">
                             <div class="date-map-area d-flex">
                                 <a href="#">26 Nov</a>
-                                <a href="#"><img src="img/core-img/map.png" alt=""></a>
+                                <a href="#"><img src="../css/img/core-img/map.png" alt=""></a>
                             </div>
                         </div>
                         <div class="feature-events-content">
@@ -576,10 +492,10 @@
                 <div class="col-12 col-lg-6">
                     <div class="single-feature-events-area d-sm-flex align-items-center wow fadeInUpBig" data-wow-delay="0.7s">
                         <div class="feature-events-thumb">
-                            <img src="img/bg-img/event-6.jpg" alt="">
+                            <img src="../css/img/bg-img/event-6.jpg" alt="">
                             <div class="date-map-area d-flex">
                                 <a href="#">26 Nov</a>
-                                <a href="#"><img src="img/core-img/map.png" alt=""></a>
+                                <a href="#"><img src="../css/img/core-img/map.png" alt=""></a>
                             </div>
                         </div>
                         <div class="feature-events-content">
@@ -603,11 +519,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="clients-logo d-md-flex align-items-center justify-content-around">
-                        <img src="img/clients-img/1.png" alt="">
-                        <img src="img/clients-img/2.png" alt="">
-                        <img src="img/clients-img/3.png" alt="">
-                        <img src="img/clients-img/4.png" alt="">
-                        <img src="img/clients-img/5.png" alt="">
+                        <img src="../css/img/clients-img/1.png" alt="">
+                        <img src="../css/img/clients-img/2.png" alt="">
+                        <img src="../css/img/clients-img/3.png" alt="">
+                        <img src="../css/img/clients-img/4.png" alt="">
+                        <img src="../css/img/clients-img/5.png" alt="">
                     </div>
                 </div>
             </div>

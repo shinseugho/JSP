@@ -543,7 +543,6 @@ li {
 .hero-search-form {
     margin-top: 90px;
     position: relative;
-    width: 1140px;
     z-index: 1;
 }
 
@@ -959,10 +958,6 @@ li {
 .dorne-footer-area {
     padding: 50px 35px;
     border-top: 1px solid #bec0cc;
-}
-
-.footer-text {
-	margin: 0px auto;
 }
 
 .footer-text p {

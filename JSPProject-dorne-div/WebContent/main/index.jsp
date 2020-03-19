@@ -1,5 +1,68 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+	
+	try
+	{
+		request.setCharacterEncoding("UTF-8");
+	}catch(Exception ex){}
+
+	String mode=request.getParameter("mode");
+	if(mode==null)
+	{
+		mode="0";
+	}
+	int no=Integer.parseInt(mode);
+	String jsp="main_02_search.jsp";  
+	
+	switch(no)
+	{
+		//메인
+		case 0: 
+			jsp="main_02_search.jsp";
+			break;
+		//여행준비
+		case 1: 
+			jsp="../detail/ready.jsp";
+			break;
+		//가이드북
+		case 2: 
+			jsp="../detail/02_guidebook.jsp";
+			break;
+		//항공	
+		case 6: 
+			jsp="../detail/06_airline.jsp";
+			break;
+		//숙소	
+		case 7:
+			jsp="../detail/07_staying.jsp";
+			break;
+		//여행지
+		case 8:
+			jsp="../detail/08_destination.jsp";	
+			break;
+		//공지사항	
+		case 9:
+			jsp="../detail/09_notice.jsp";	
+			break;
+		//자유게시판	
+		case 10:
+			jsp="../detail/10_free.jsp";	
+			break;
+		//후기	
+		case 11:
+			jsp="../detail/11_comment.jsp";	
+			break;
+		//q&a	
+		case 12:
+			jsp="../detail/12_q&a.jsp";	
+			break;
+		//고객센터	
+		case 13:
+			jsp="../detail/13_csc.jsp";	
+			break;	
+	}
+%>    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -20,13 +83,20 @@
 
     <!-- Responsive CSS -->
     <link href="../css/css/responsive/responsive.css" rel="stylesheet">
+    
 </head>
 <body>
   
-  <!-- header/top -->
-  <jsp:include page="./home.jsp"></jsp:include>
-  
-  
+  	<!-- header -->
+	<%@ include file="./main_01_header.jsp" %>
+	
+	<!-- content -->
+	<div>
+		<jsp:include page="<%=jsp %>"></jsp:include>
+	</div>
+	<!-- footer -->
+  	<%@ include file="./main_03_footer.jsp" %>
+  	
     <!-- jQuery-2.2.4 js -->
     <script src="../css/js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
