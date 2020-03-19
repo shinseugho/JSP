@@ -19,6 +19,17 @@ function postfind()
 function idcheck() {
 	window.open("idcheck.jsp","idcheck","width=380, height=230, scrollbars=no")
 }
+function join() {
+	/*
+		태그접근순서(: 계층구조)
+			window
+			document
+			form
+			input, select, textarea
+	*/
+	// 유효성 검사: spring을 이용하는 것이 더 편리해서 지금은 생략
+	document.frm.submit();
+}
 </script>
 <style type="text/css">
 .row{
@@ -46,7 +57,7 @@ function idcheck() {
 	<div class="container">
 		<h1 class="text-center">Sign up</h1>
 		<div class="row">
-			<form name="frm">
+			<form name="frm" action="join_ok.jsp" method="post">
 			<table class="table table-hover">
 				<tr>
 					<th width="15%" class="danger text-right">Username</th>
@@ -77,8 +88,8 @@ function idcheck() {
 				<tr>
 					<th width="15%" class="danger text-right">Gender</th>
 					<td width="85%" >
-						<input type="radio" name="sex" value="Man" checked="checked">Man
-						<input type="radio" name="sex" value="Woman">Woman
+						<input type="radio" name="sex" value="남자" checked="checked">Man
+						<input type="radio" name="sex" value="여자">Woman
 					</td>
 				</tr>
 				<tr>
@@ -127,7 +138,9 @@ function idcheck() {
 				</tr>
 				<tr>
 					<td colspan="2" class="text-center">
-						<input type="button" value="Sign up" class="btn stn-sm btn-info">
+						<input type="button" value="Sign up" class="btn stn-sm btn-info"
+								onclick="join()"
+						>
 						<input type="button" value="Cancel" class="btn stn-sm btn-success"
 							   onclick="javascript:history.back()"
 						>

@@ -2,7 +2,7 @@ package com.sist.dao;
 
 import java.util.*;
 
-public class MemeberBean {
+public class MemberBean {
 	
 	/*	ID       NOT NULL VARCHAR2(20)  
 		PWD      NOT NULL VARCHAR2(10)  
