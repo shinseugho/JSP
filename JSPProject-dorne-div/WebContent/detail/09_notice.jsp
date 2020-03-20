@@ -24,11 +24,13 @@
 	</div>
 	<!-- board_side_left는 ../css/bootstrap/bootstrap.min.css안에 있다. -->     
     <div class="board_side_left" >
-		<th><h2>게시판</h2></th><br>
-        <td>공지사항</td><br>
-        <td>자유게시판</td><br>
-        <td>후기&팁</td><br>
-        <td>Q&A</td>
+    	<div class="section-heading dark">
+			<th><h4>게시판</h4></th><br>
+	        <td>공지사항</td><br>
+	        <td>자유게시판</td><br>
+	        <td>후기&팁</td><br>
+	        <td>Q&A</td>
+        </div>
 	</div>
    	<div class="container">
 		<table class="dorne-table">
