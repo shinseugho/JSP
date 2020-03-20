@@ -8,7 +8,7 @@
 </head>
 <body>
    <!-- ***** Breadcumb Area Start ***** -->
-    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/hero-1.jpg)">
+    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(../css/img/bg-img/jeju.png)">
     </div>
     <!-- ***** Breadcumb Area End ***** -->
 

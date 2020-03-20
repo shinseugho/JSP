@@ -13,13 +13,13 @@
 		mode="0";
 	}
 	int no=Integer.parseInt(mode);
-	String jsp="main_02_search.jsp";  
+	String jsp="../detail/search.jsp";  
 	
 	switch(no)
 	{
 		//메인
 		case 0: 
-			jsp="main_02_search.jsp";
+			jsp="../detail/search.jsp";
 			break;
 		//여행준비
 		case 1: 
