@@ -9,6 +9,7 @@ public class hotel {
 		Scanner scan=new Scanner(System.in);
 		System.out.println("숙박업소등급을 결정해주세요. 1:호텔, 2:콘도, 3:리조트 ");
 		int type=scan.nextInt();
+		//고칠점
 		
 		if(type==1)
 		{	
