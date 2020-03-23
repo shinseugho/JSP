@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+ <member>
+ 	<list>
+ 		<no></no>
+ 		<name></name>
+ 		<sex></sex>
+ 		<address></address>
+ 		<tel></tel>
+ 		<content></content>
+ 	</list>
+ 	<list>
+ 		<no></no>
+ 		<name></name>
+ 		<sex></sex>
+ 		<address></address>
+ 		<tel></tel>
+ 	</list>
+ 	<list>
+ 		<no></no>
+ 		<name></name>
+ 		<sex></sex>
+ 		<address></address>
+ 		<hp></hp>
+ 		<content></content>
+ 	</list>
+ </memeber>
+ 
+ list:default값(반드시 한번만 태그를 사용한다.)
+ list+: 한 번이상 사용할 수 있다.
+ list*: 0 번이상 사용할 수 있다.
+ ? 	  : 사용할 수 있고, 사용하지 않을 수도 있다.
+ |	  : 선택
+ <!ELEMENT member(list+)>
+ <!ELEMENT list  (no,name,sex,address,(tel|hp),content?)>
+ <!ELEMENT no(#PCDATA)>
+ <!ELEMENT name(#PCDATA)>
+ <!ELEMENT sex(#PCDATA)>
+ <!ELEMENT address(#PCDATA)>
+ <!ELEMENT tel(#PCDATA)>
+ <!ELEMENT hp(#PCDATA)>
+ <!ELEMENT content(#PCDATA)>
+ 
+ dtd는 문서의 형식을 정의하는 역활을 한다.     
+ -->
+ <!ELEMENT member (list+)>
+ <!ELEMENT list (no,name,sex,address,(hp|tel),content?)>
+ <!ELEMENT no (#PCDATA)>
+ <!ELEMENT name (#PCDATA)>
+ <!ELEMENT sex (#PCDATA)>
+ <!ELEMENT address (#PCDATA)>
+ <!ELEMENT hp (#PCDATA)>
+ <!ELEMENT tel (#PCDATA)>
+ <!ELEMENT content (#PCDATA)>    
+ 

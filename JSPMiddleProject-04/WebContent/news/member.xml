@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE member SYSTEM "memeber.dtd">
+<member>
+	<list>
+		<no>1</no>
+		<name>홍길동</name>
+		<sex>남자</sex>
+		<address>서울</address>
+		<hp>123-4567-8901</hp>
+	</list>
+</member>
