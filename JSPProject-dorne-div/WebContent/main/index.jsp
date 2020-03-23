@@ -19,15 +19,27 @@
 	{
 		//메인
 		case 0: 
-			jsp="../detail/search.jsp";
+			jsp="../detail/00_search.jsp";
 			break;
 		//여행준비
 		case 1: 
-			jsp="../detail/ready.jsp";
+			jsp="../detail/01_ready.jsp";
 			break;
 		//가이드북
 		case 2: 
 			jsp="../detail/02_guidebook.jsp";
+			break;
+		//항공	
+		case 3: 
+			jsp="../detail/03_airline.jsp";
+			break;
+		//숙소	
+		case 4:
+			jsp="../detail/04_staying.jsp";
+			break;
+		//여행지
+		case 5:
+			jsp="../detail/05_destination.jsp";	
 			break;
 		//항공	
 		case 6: 
@@ -40,7 +52,7 @@
 		//여행지
 		case 8:
 			jsp="../detail/08_destination.jsp";	
-			break;
+			break;	
 		//공지사항	
 		case 9:
 			jsp="../detail/09_notice.jsp";	
@@ -60,7 +72,15 @@
 		//고객센터	
 		case 13:
 			jsp="../detail/13_csc.jsp";	
-			break;	
+			break;
+		//회원가입
+		case 14:
+			jsp="../detail/00_signup.jsp";	
+			break;
+		//로그인
+		case 15:
+			jsp="../detail/00_signin.jsp";	
+			break;
 	}
 %>    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">

@@ -24,7 +24,7 @@
 	</div>
 	<!-- board_side_left는 ../css/bootstrap/bootstrap.min.css안에 있다. -->     
     <div class="board_side_left" >
-    	<div class="section-heading dark">
+    	<div class="section-heading dark" style="border: 1px solid red">
 			<th><h4>게시판</h4></th><br>
 	        <td>공지사항</td><br>
 	        <td>자유게시판</td><br>
@@ -32,24 +32,33 @@
 	        <td>Q&A</td>
         </div>
 	</div>
-   	<div class="container">
-		<table class="dorne-table">
+   	<div class="container" style="border: 1px solid blue">
+		<table class="dorne-table" style="border: 1px solid blue;">
 			<tr>
-				<td class="text-right">
+				<td class="text-right" id="dorne-board-newwriting">
 				<a href="#">새글쓰기</a>
 				</td>
 			</tr>
 		</table>
-				<br>
-				<br>
-				<br>
+		<br/>
 		<table class="dorne-table">
-			<tr>
+			<tr style="border: 1px solid black;">
 				<th width="10%" class="text-center">번호</th>
 				<th width="45%" class="text-center">제목</th>
 				<th width="15%" class="text-center">이름</th>
 				<th width="20%" class="text-center">작성일</th>
 				<th width="10%" class="text-center">조회수</th>
+			</tr>
+<!-- 		<tr>
+				<td>&nbsp;</td>	
+			</tr>
+ -->
+			<tr style="border: 1px solid orange;">
+				<td width="10%" class="text-center">1</td>
+				<td width="45%" class="text-center">여행복행입니다</td>
+				<td width="15%" class="text-center">관리자</td>
+				<td width="20%" class="text-center">2020-03-23</td>
+				<td width="10%" class="text-center">5</td>
 			</tr>
 		</table>
 	</div>

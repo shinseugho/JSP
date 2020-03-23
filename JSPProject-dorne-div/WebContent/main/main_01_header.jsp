@@ -31,7 +31,7 @@
             <div class="row h-100">
                 <div class="col-12 h-100">
                     <nav class="h-100 navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="#"><img src="../css/img/core-img/logo.png" alt=""></a>
+                        <a class="navbar-brand" href="./index.jsp"><img src="../css/img/core-img/logo.png" alt=""></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dorneNav" aria-controls="dorneNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
                         <!-- Nav -->
                         <div class="collapse navbar-collapse" id="dorneNav">
@@ -81,11 +81,11 @@
                             </div>
                             <!-- Register btn -->
                             <div class="dorne-signin-btn">
-                                <a href="#">회원가입</a>
+                                <a href="index.jsp?mode=14">회원가입</a>
                             </div>
                             <!-- Signin btn -->
                             <div class="dorne-signin-btn">
-                                <a href="#">로그인</a>
+                                <a href="index.jsp?mode=15">로그인</a>
                             </div>
                         </div>
                     </nav>

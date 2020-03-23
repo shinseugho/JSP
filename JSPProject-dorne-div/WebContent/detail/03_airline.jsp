@@ -38,6 +38,14 @@
                                 <option value="4">Melbourne</option>
                                 <option value="5">London</option>
                             </select>
+                            <select class="custom-select" id="events-destinations">
+                                <option selected>Your Destinations</option>
+                                <option value="1">New York</option>
+                                <option value="2">Latvia</option>
+                                <option value="3">Dhaka</option>
+                                <option value="4">Melbourne</option>
+                                <option value="5">London</option>
+                            </select>
                             <select class="custom-select" id="catagories">
                                 <option selected>All Catagories</option>
                                 <option value="1">Catagories 1</option>
@@ -160,7 +168,7 @@
             </div>
             
             <!-- Explore Search Result -->
-            <div class="explore-search-result">
+<%--              <div class="explore-search-result">
                 <!-- Single Features Area -->
                 <div class="single-features-area">
                     <img src="../css/img/bg-img/feature-1.jpg" alt="">
@@ -231,12 +239,8 @@
                 </div>
             </div>
         </div>
-        <!-- Explore Map Area -->
-        <div class="explore-map-area">
-            <div id="exploreGoogleMap"></div>
-        </div>
+--%>        
     </section>
 </body>
-
 </body>
 </html>

@@ -18,7 +18,7 @@
                 <div class="col-12">
                     <div class="section-heading dark text-center">
                         <span></span>
-                        <h4>Featured destinations</h4>
+                        <h4>가이드북</h4>
                         <p>Editor’s pick</p>
                     </div>
                 </div>
