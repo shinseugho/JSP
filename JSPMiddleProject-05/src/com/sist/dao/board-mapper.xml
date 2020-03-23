@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PreparedStatement, ResultSet -->
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sist.dao.board-mapper">
+	<!-- 
+		목록
+		 public BoardVO boardListData(Map map)
+		 
+		 public int movieTotalPage()=> <select id="movieTotalPage" resultType="int">
+		 public <ZipcodeBean> postfind(String dong)=><select id="postfind" resultType="zipcodeBean" parameterType="String">
+		 
+		 Map map=new HashMap();
+		 map.out("start",1);
+		 map.out("end",10);
+		 
+		 #{start } => map.get("start");
+		 #{end }   => map.get("end");
+		 
+		 public List<BoardVO> boardListsData(Map map)
+		 => selectList();: 묶어서
+		 => selectone();: 한개만
+	 -->	
+	 <select id="boardListData" resultType="BoardVO" parameterType="java.util.Map">
+	 	SELECT no, subject, name, regdate, hit, num 
+	 	FROM (SELECT no, subject, name, regdate, hit rownum as num
+	 	FROM (SELECT no, subject, name, regdate, hit
+	 	FROM board ORDER BY no DESC))
+	 	WHERE num BETWEEN #{start } AND #{end }
+	 </select>
+	 
+	 <select id="boardDetailData" resultType="BoardVO" parameterType="int">
+	 	SELECT * FROM board
+	 	WHERE no=#{no }
+	 </select>
+	 
+	 <!-- <insert id="boardInsert" parameterType="BoardVO">
+	 	INSERT INTO 
+	 	VALUES
+	 </insert>	 -->
+	 
+	 <!-- <update id="boardUpdate" parameterType="BoardVO">
+		UPDATE 
+		SET
+		WHERE	
+	 </update> -->
+	 
+	 <!-- <delete id="boardDelete" parameterType="int">
+	 	DELETE FROM
+	 	WHERE
+	 </delete> -->
+</mapper>
