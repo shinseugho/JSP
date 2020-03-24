@@ -9,8 +9,9 @@ public class BoardVO {
 	private String subject;
 	private String content;
 	private String pwd;
-	private Date hiredate;
+	private Date regdate;
 	private int hit;
+	private String dbday;
 	
 	public int getNo() {
 		return no;
@@ -42,17 +43,23 @@ public class BoardVO {
 	public void setPwd(String pwd) {
 		this.pwd = pwd;
 	}
-	public Date getHiredate() {
-		return hiredate;
+	public Date getRegdate() {
+		return regdate;
 	}
-	public void setHiredate(Date hiredate) {
-		this.hiredate = hiredate;
+	public void setRegdate(Date regdate) {
+		this.regdate = regdate;
 	}
 	public int getHit() {
 		return hit;
 	}
 	public void setHit(int hit) {
 		this.hit = hit;
+	}
+	public String getDbday() {
+		return dbday;
+	}
+	public void setDbday(String dbday) {
+		this.dbday = dbday;
 	}
 	
 }
