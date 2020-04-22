@@ -63,7 +63,7 @@ public class DispatcherServlet extends HttpServlet {
 					{
 						String jsp=(String)m.invoke(obj, request,response);
 						
-						if(jsp.startsWith("rediredct"))
+						if(jsp.startsWith("redirect"))
 						{
 							response.sendRedirect(jsp.substring(jsp.indexOf(":")+1));
 						}
@@ -78,7 +78,7 @@ public class DispatcherServlet extends HttpServlet {
 					}
 				}
 			}
-		}catch(Exception ex){}
+		}catch(Exception ex){ex.printStackTrace();}
 	}
 
 }
